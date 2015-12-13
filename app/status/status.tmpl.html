@@ -1,0 +1,19 @@
+<div class="status-container">
+    <div class="current-status-container">
+        <i class="icon me"></i>
+        <div class="status-quote-container">
+            <span class="quotation-mark">&ldquo;</span>
+            <span class="status-quote">{{ status.statusLabel }}</span>
+            <span class="quotation-mark">&rdquo;</span>
+        </div>
+    </div>
+    <md-content layout-padding layout="row">
+        <md-input-container class="status-input">
+            <label>Update Your Status</label>
+            <input ng-model="status.status">
+        </md-input-container>
+        <md-input-container>
+            <md-button ng-click="status.update(status.status)">Update</md-button>
+        </md-input-container>
+    </md-content>
+</div>

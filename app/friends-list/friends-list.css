@@ -1,0 +1,49 @@
+.friends-list {
+    height: 675px;
+    overflow: scroll;
+}
+.friends-list-container md-toolbar {
+    background-color: #33333a;
+    color: #EFEFEF;
+}
+.friends-list-container .md-toolbar-tools label {
+    color: #efefef;
+}
+
+.friends-list-container .md-toolbar-tools input {
+    border-color: #efefef;
+}
+
+.friends-list-item {
+    padding: 5px;
+}
+
+.friends-list-item i {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    vertical-align: top;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    background: transparent url('/images/user-icons.png') 0 0 no-repeat;
+    background-size: 330px 330px;
+    margin-right: 10px;
+}
+
+.friends-list-item .name-group {
+    display: inline-block;
+}
+
+.friends-list-item span {
+    line-height: 32px;
+    font-size: 22px;
+}
+
+.friends-list-item .first-name {
+    font-weight: 300;
+}
+
+.friends-list-item .last-name {
+    font-weight: 500;
+}

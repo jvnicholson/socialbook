@@ -1,0 +1,13 @@
+<div class="friends-list-container" layout="column" flex>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-input-container>
+                <label>Search Friends</label>
+                <input ng-model="friendsList.filter">
+            </md-input-container>
+        </div>
+    </md-toolbar>
+    <md-list layout="column" flex class="friends-list">
+        <friends-list-item ng-repeat="friend in friendsList.friends | filter: friendsList.filter" friend="friend"></friends-list-item>
+    </md-list>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="socialbook">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialBook</title>
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:100,100italic,300,300italic,400,500,700,900,400italic">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/socialbook.css">
+    <link rel="stylesheet" href="/app/friends-list/friends-list.css">
+    <link rel="stylesheet" href="/app/news-feed/news-feed.css">
+    <link rel="stylesheet" href="/app/status/status.css">
+    <!-- endinject -->
+
+</head>
+<body>
+    <socialbook-app></socialbook-app>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<!-- endbower -->
+
+<!-- inject:js -->
+<script src="/app/socialbook-module.js"></script>
+<script src="/app/friends-list/friends-list-service.js"></script>
+<script src="/app/news-feed/news-feed-service.js"></script>
+<script src="/app/status/status-service.js"></script>
+<script src="/app/socialbook-directive.js"></script>
+<script src="/app/friends-list/friends-list-directive.js"></script>
+<script src="/app/news-feed/news-feed-directive.js"></script>
+<script src="/app/status/status-directive.js"></script>
+<script src="/app/friends-list/item/item-directive.js"></script>
+<script src="/app/news-feed/item/item-directive.js"></script>
+<!-- endinject -->
+</body>
+</html>

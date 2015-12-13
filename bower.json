@@ -1,0 +1,24 @@
+{
+  "name": "socialbook",
+  "description": "Social media app for job interview",
+  "main": "index.js",
+  "authors": [
+    "Josh Nicholson"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-material": "~0.11.4",
+    "moment": "~2.10.6"
+  }
+}

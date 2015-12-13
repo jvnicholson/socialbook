@@ -1,0 +1,37 @@
+.news-feed-item {
+    max-width: 510px;
+}
+
+.news-feed-item md-card {
+    padding: 15px;
+}
+
+.news-feed-item .name-date-group {
+    display: inline-block;
+}
+
+.news-feed-item .name-date-group .name {
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.news-feed-item .name-date-group .timestamp {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.news-feed-item .md-card-title i {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    vertical-align: top;
+    background: transparent url('/images/user-icons.jpg') 0 0 no-repeat;
+    background-size: 200px 200px;
+    margin-right: 10px;
+}
+
+.news-feed-item .md-card-text {
+    font-size: 0.9em;
+    margin: 10px 0;
+}

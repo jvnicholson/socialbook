@@ -1,0 +1,30 @@
+.status-container {
+    padding: 25px;
+    max-width: 700px;
+}
+.status-input {
+    width: 80%;
+}
+
+.status-quote-container {
+    display: inline-block;
+}
+.status-quote-container span {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 4em;
+}
+
+.status-quote-container span.quotation-mark {
+    font-size: 4em;
+    line-height: 1em;
+}
+
+.current-status-container i {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    vertical-align: top;
+    background: transparent url('/images/me.png') 0 0 no-repeat;
+    margin-right: 10px;
+}

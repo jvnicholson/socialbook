@@ -1,0 +1,14 @@
+<md-list-item class="news-feed-item">
+    <md-card layout="column" flex>
+        <div class="md-card-title">
+            <i class="icon" ng-style="item.iconStyle"></i>
+            <div class="name-date-group">
+                <span class="name">{{ item.fullName }}</span>
+                <div class="timestamp">{{ item.timestamp }}</div>
+            </div>
+        </div>
+        <div class="md-card-text">
+            <span>{{ item.status }}</span>
+        </div>
+    </md-card>
+</md-list-item>
