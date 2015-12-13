@@ -2,6 +2,7 @@
 	'use strict';
 
 	angular.module('socialbook')
+		.controller('newsFeedItemController', ['$scope', controller])
 		.directive('newsFeedItem', directive);
 
 	function directive() {
@@ -11,40 +12,40 @@
 			scope: {
 				data: "=item"
 			},
-			controller: ['$scope', controller],
+			controller: 'newsFeedItemController',
 			controllerAs: 'item'
 		};
+	}
 
-		function controller($scope) {
-			var vm = this;
+	function controller($scope) {
+		var vm = this;
 
-			// Properties
-			vm.fullName = $scope.data.name.first + " " + $scope.data.name.last;
-			vm.timestamp = moment($scope.data.timestamp).fromNow();
-			vm.status = $scope.data.status;
+		// Properties
+		vm.fullName = $scope.data.name.first + " " + $scope.data.name.last;
+		vm.timestamp = moment($scope.data.timestamp).fromNow();
+		vm.status = $scope.data.status;
 
-			// Methods
+		// Methods
 
-			// Init
-			setIconBackgroundPosition($scope.data.id);
+		// Init
+		setIconBackgroundPosition($scope.data.id);
 
-			// Helpers
-			function setIconBackgroundPosition(i) {
-				// We only have 9 icons, in a 3 x 3 grid. Reuse them for all 'i'.
-				var index = i - (Math.floor(i / 9) * 9),
-					row = Math.floor(index / 3),
-					col = index;
+		// Helpers
+		function setIconBackgroundPosition(i) {
+			// We only have 9 icons, in a 3 x 3 grid. Reuse them for all 'i'.
+			var index = i - (Math.floor(i / 9) * 9),
+				row = Math.floor(index / 3),
+				col = index;
 
-				if(index > 2) {
-					col = index % 3;
-				}
-
-				var y = 15 + (row * 61);
-				var x = 19 + (col * 58);
-				vm.iconStyle = {
-					'background-position': '-' + x + 'px ' + '-' + y + 'px'
-				};
+			if (index > 2) {
+				col = index % 3;
 			}
+
+			var y = 15 + (row * 61);
+			var x = 19 + (col * 58);
+			vm.iconStyle = {
+				'background-position': '-' + x + 'px ' + '-' + y + 'px'
+			};
 		}
 	}
 })();
