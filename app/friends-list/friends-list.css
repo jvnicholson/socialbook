@@ -20,6 +20,7 @@ friends-list-item {
 
 .friends-list-container .md-toolbar-tools input {
     border-color: #efefef;
+    color: #efefef;
 }
 
 .friends-list-item {
