@@ -9,6 +9,11 @@ friends-list-item {
     background-color: #33333a;
     color: #EFEFEF;
 }
+
+.friends-list-container .md-toolbar-tools {
+    min-height: 90px;
+}
+
 .friends-list-container .md-toolbar-tools label {
     color: #efefef;
 }
