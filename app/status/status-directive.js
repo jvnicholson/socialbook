@@ -31,14 +31,14 @@
 			if (!newStatus)
 				return;
 
-			vm.statusLabel = newStatus;
 			statusService.updateStatus(newStatus)
 				.then(function (response) {
 					var result = response.data;
+
+					// todo: let the user know something went wrong.
+					vm.error = (result.success !== 'success');
 					if (result.status === 'success') {
 						vm.statusLabel = newStatus;
-					} else {
-						// let the user know something went wrong
 					}
 					vm.status = '';
 				})
