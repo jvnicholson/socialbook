@@ -1,12 +1,16 @@
 <section class='socialbook' layout="row" flex>
-    <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+    <md-sidenav
+            class="md-sidenav-left md-primary"
+            md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-md')"
+        >
         <div class="appname">
             <span>Socialbook</span>
         </div>
         <friends-list></friends-list>
     </md-sidenav>
     <div layout="column" flex>
-        <div class="section-title">
+        <div class="section-title md-primary md-hue-1">
             <h2 class="md-flex">My Status</h2>
         </div>
         <status></status>

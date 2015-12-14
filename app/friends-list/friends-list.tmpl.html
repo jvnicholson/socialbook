@@ -7,7 +7,7 @@
             </md-input-container>
         </div>
     </md-toolbar>
-    <md-list layout="column" flex class="friends-list">
+    <div layout="column" flex class="friends-list">
         <friends-list-item ng-repeat="friend in friendsList.friends | filter: friendsList.filter" friend="friend"></friends-list-item>
-    </md-list>
+    </div>
 </div>

@@ -3,7 +3,7 @@
     overflow: scroll;
 }
 friends-list-item {
-    min-height: 82px;
+    min-height: 84px;
 }
 .friends-list-container md-toolbar {
     background-color: #33333a;
@@ -19,6 +19,9 @@ friends-list-item {
 
 .friends-list-item {
     padding: 5px;
+    text-transform: none;
+    text-align: left;
+    width: 95%;
 }
 
 .friends-list-item i {
@@ -41,6 +44,7 @@ friends-list-item {
 .friends-list-item span {
     line-height: 32px;
     font-size: 22px;
+    color: #efefef;
 }
 
 .friends-list-item .first-name {
