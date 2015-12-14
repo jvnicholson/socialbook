@@ -14,4 +14,4 @@ describe('Status Feature', function() {
 			expect(statusLabel.length).toBeGreaterThan(0);
 		});
 	});
-})
+});

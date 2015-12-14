@@ -2,6 +2,9 @@
     height: 675px;
     overflow: scroll;
 }
+friends-list-item {
+    min-height: 82px;
+}
 .friends-list-container md-toolbar {
     background-color: #33333a;
     color: #EFEFEF;
