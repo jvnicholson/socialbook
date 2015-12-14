@@ -8,6 +8,10 @@
   },
   "author": "Josh Nicholson",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jvnicholson/socialbook.git"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-inject": "^3.0.0",
