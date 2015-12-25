@@ -16,7 +16,7 @@ In order to run tha application you'll need to have a local web server. [Live-Se
      $ bower install
      $ live-server
  ```
- 
- ## Testing
+
+## Testing
  
  To run the unit tests type `gulp test` from the root (i.e., 'socialbook') directory
